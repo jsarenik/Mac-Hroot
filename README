@@ -3,3 +3,15 @@ It currently works with Yosemite (10.10.1).
 
 $ uname -a
 Darwin lomidrevo.local 14.0.0 Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64 x86_64
+
+USAGE
+=====
+
+./mkmacchroot.sh [directory]
+
+If the directory is not specified, then $PWD/mac-jail will be used.
+
+./chroot.sh [directory]
+
+This script enters the chroot as current user, re-using SSH agent
+and mDNSResolver from host system.

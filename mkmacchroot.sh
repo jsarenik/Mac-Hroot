@@ -23,7 +23,6 @@ cat <<EOF
 /usr/bin/curl
 /usr/bin/ssh
 /usr/sbin/netstat
-/usr/local/bin/git
 /usr/local/bin/mksh
 EOF
 } | while read bin
@@ -37,7 +36,6 @@ cat <<EOF
 /dev/console
 /dev/tty
 /usr/share/terminfo
-/usr/local/Cellar/git/*/share/git-core/templates
 $HOME/.ssh
 EOF
 } | while read file

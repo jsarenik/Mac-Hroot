@@ -46,3 +46,4 @@ do
   mkdir -p ${TO%/*}
   eval sudo cp -avR "$file" "$TO"
 done
+sudo chown -R $USER $MACJAIL

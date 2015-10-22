@@ -1,5 +1,6 @@
 #!/bin/sh
 
+MYUSER=${SUDO_USER:-$USER}
 MACJAIL=${1:-"$PWD/mac-jail"}
 MACJAIL=${MACJAIL%/}
 test -d $MACJAIL || { echo "Directory $MACJAIL not found!"; exit 1; }
@@ -34,4 +35,4 @@ env -i \
   SHELL=$SHELL \
   HOME=$HOME \
   PATH=$PATH \
-  sudo /usr/sbin/chroot -u $LOGNAME $MACJAIL $SHELL
+  /usr/sbin/chroot -u $MYUSER $MACJAIL $SHELL

@@ -14,7 +14,7 @@ USAGE
 
 If the directory is not specified, then $PWD/mac-jail will be used.
 
-./chroot.sh [directory]
+sudo ./chroot.sh [directory]
 
-This script enters the chroot as current user, re-using SSH agent
+This script enters the created chroot as current user, re-using SSH agent
 and mDNSResolver from host system.

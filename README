@@ -1,17 +1,15 @@
 Scripts to make a working chroot on macOS.
-It currently works with `macOS Mojave (10.14.5)`.
+It currently works with macOS Mojave (10.14.5).
 
-```
 mac-jail$ uname -a
 Darwin my-funny-hostname.local 18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64 x86_64
-```
 
 USAGE
 =====
 
 ./mkmacchroot.sh [directory]
 
-If the directory is not specified, then `$PWD/mac-jail` will be used.
+If the directory is not specified, then $PWD/mac-jail will be used.
 
 sudo ./chroot.sh [directory]
 

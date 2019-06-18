@@ -32,6 +32,7 @@ ln -f $SSH_AUTH_SOCK $JAILSOCK
 env -i \
   TERM=$TERM \
   PS1="${MACJAIL##*/}\$ " \
+  SSH_AUTH_SOCK=$SSH_AUTH_SOCK \
   SHELL=$SHELL \
   HOME=$HOME \
   PATH=$PATH \

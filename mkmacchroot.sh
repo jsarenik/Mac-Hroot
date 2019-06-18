@@ -4,26 +4,29 @@ MACJAIL=${1:-"$PWD/mac-jail"}
 
 {
 cat <<EOF
-/usr/lib/dyld
 /bin/bash
-/bin/ls
 /bin/cat
-/bin/rm
+/bin/ls
 /bin/mkdir
-/bin/rmdir
 /bin/mv
+/bin/rm
+/bin/rmdir
+/bin/sh
 /bin/sleep
 /sbin/ping
-/usr/bin/vi
-/usr/bin/grep
-/usr/bin/less
-/usr/bin/env
-/usr/bin/host
-/usr/bin/dig
 /usr/bin/curl
+/usr/bin/dig
+/usr/bin/env
+/usr/bin/grep
+/usr/bin/host
+/usr/bin/id
+/usr/bin/less
 /usr/bin/ssh
+/usr/bin/ssh-add
+/usr/bin/uname
+/usr/bin/vi
+/usr/lib/dyld
 /usr/sbin/netstat
-/usr/local/bin/mksh
 EOF
 } | while read bin
 do
